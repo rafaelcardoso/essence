@@ -3,6 +3,9 @@
  * Functions
  *
  * Loads theme initializers.
+ *
+ * @package WordPress
+ * @subpackage Essence
  */
 
 require_once locate_template('/lib/utilities.php');
