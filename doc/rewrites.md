@@ -1,3 +1,5 @@
+[Documentation table of contents](TOC.md)
+
 # Rewrites
 
 Rewrites are handled by `lib/htaccess.php`. Rewrites currently do not happen for child themes or network installs.

@@ -1,3 +1,5 @@
+[Documentation table of contents](TOC.md)
+
 # Theme templates
 
 ### comments.php
