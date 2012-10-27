@@ -17,7 +17,9 @@
     <?php include essence_template_path(); ?>
   </div>
 
-  <?php get_template_part('templates/sidebar'); ?>
+  <?php if (essence_display_sidebar()) : ?>
+    <?php get_template_part('templates/sidebar'); ?>
+  <?php endif; ?>
 
 <?php get_template_part('templates/footer'); ?>
 

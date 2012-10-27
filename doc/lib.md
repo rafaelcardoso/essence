@@ -9,7 +9,7 @@ This file handles the various WordPress clean up. [About the clean up](cleanup.m
 ### config.php
 
 This file is used to enable various theme features such as the post excerpt
-length.
+length and which pages that shouldn't have the sidebar.
 
 ### rewrites.php
 

@@ -7,6 +7,37 @@
  */
 
 /**
+ * Define which pages shouldn't have the sidebar
+ *
+ * See lib/sidebar.php for more details
+ */
+function essence_display_sidebar() {
+  $sidebar_config = new Essence_Sidebar(
+    /**
+     * Conditional tag checks (http://codex.wordpress.org/Conditional_Tags)
+     * Any of these conditional tags that return true won't show the sidebar
+     *
+     * To use a function that accepts arguments, use the following format:
+     *
+     * array('function_name', array('arg1', 'arg2'))
+     *
+     * The second element must be an array even if there's only 1 argument.
+     */
+    array(
+      'is_404'
+    ),
+    /**
+     * Page template checks (via is_page_template())
+     * Any of these page templates that return true won't show the sidebar
+     */
+    array(
+    )
+  );
+
+  return $sidebar_config->display;
+}
+
+/**
  * Post excerpt lenght
  *
  * @since Essence 1.0.0
