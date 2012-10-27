@@ -9,6 +9,7 @@
  */
 
 require_once locate_template('/lib/utilities.php');
+require_once locate_template('/lib/sidebar.php');
 require_once locate_template('/lib/config.php');
 require_once locate_template('/lib/theme.php');
 require_once locate_template('/lib/cleanup.php');
