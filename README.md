@@ -16,6 +16,11 @@ Clone the git repo - `git clone git://github.com/kevva/essence.git` - or [downlo
 * Cleaner HTML output of navigation menus
 * Cleaner output of `wp_head` and enqueued scripts/styles
 
+## Documentation
+
+Take a look at the
+[documentation table of contents](https://github.com/kevva/essence/blob/master/doc/TOC.md).
+
 ## Contributing
 
 Everyone is welcome to [contribute](https://github.com/kevva/essence/blob/master/CONTRIBUTING.md). There are several ways you can help out:
