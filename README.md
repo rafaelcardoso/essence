@@ -3,7 +3,7 @@
 Essence is a professional barebones theme for Wordpress that's based on
 [HTML5 Boilerplate](http://www.html5boilerplate.com/).
 
-## Getting started
+## Installation
 
 Clone the git repo - `git clone git://github.com/kevva/essence.git` - or [download it](https://github.com/kevva/essence/zipball/master)
 
