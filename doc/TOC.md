@@ -1,7 +1,7 @@
 # Essence documentation
 
 Essence is a professional barebones theme for Wordpress that's based on
-[HTML5 Boilerplate](http://www.html5boilerplate.com/).
+[HTML5 Boilerplate](http://www.html5boilerplate.com/) and [Roots](http://www.rootstheme.com/).
 
 ## Getting started
 
