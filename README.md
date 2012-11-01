@@ -29,3 +29,10 @@ Everyone is welcome to [contribute](https://github.com/kevva/essence/blob/master
 * Suggesting new features
 * Writing or refactoring code
 * Fixing [issues](https://github.com/kevva/essence/issues)
+
+## Acknowledgements
+
+Inspiration and code was taken from many sources, including
+
+* [Roots](https://github.com/retlehs/roots)
+* [HTML5 Boilerplate](https://github.com/h5bp/html5boilerplate)
