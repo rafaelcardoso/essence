@@ -32,7 +32,7 @@ Everyone is welcome to [contribute](https://github.com/kevva/essence/blob/master
 
 ## Acknowledgements
 
-Inspiration and code was taken from many sources, including
+Inspiration and code was taken from the following sources
 
 * [Roots](https://github.com/retlehs/roots)
 * [HTML5 Boilerplate](https://github.com/h5bp/html5boilerplate)
