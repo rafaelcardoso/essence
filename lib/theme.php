@@ -128,7 +128,7 @@ function essence_scripts()
   // Register jQuery
   if (!is_admin()) {
     wp_deregister_script('jquery');
-    wp_register_script('jquery', $protocol . '//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js', false, null, true);
+    wp_register_script('jquery', $protocol . '//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js', false, null, true);
     wp_enqueue_script('jquery');
   }
 
