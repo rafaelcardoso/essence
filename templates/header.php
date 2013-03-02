@@ -1,8 +1,6 @@
 <?php
 /**
- * The Header for our theme.
- *
- * Displays the header and navigation.
+ * Displays the header and navigation
  *
  * @package WordPress
  * @subpackage Essence
@@ -16,7 +14,7 @@
 <nav role="navigation">
   <?php wp_nav_menu(array(
     'theme_location' => 'nav_primary',
-    'walker' => new Essence_Nav_Walker(),
+    'walker' => new Essence_Nav_Menu(),
     'menu_class' => 'nav',
     'fallback_cb' => false
   ));

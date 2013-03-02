@@ -9,7 +9,7 @@
 
 <?php get_template_part('templates/head'); ?>
 
-<body <?php body_class(); ?>>
+<body>
 
   <?php get_template_part('templates/header'); ?>
 
@@ -18,7 +18,7 @@
   </div>
 
   <?php if (essence_display_sidebar()) : ?>
-    <?php get_template_part('templates/sidebar'); ?>
+    <?php include essence_sidebar_path(); ?>
   <?php endif; ?>
 
 <?php get_template_part('templates/footer'); ?>

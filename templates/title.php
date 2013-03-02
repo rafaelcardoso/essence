@@ -1,6 +1,6 @@
 <?php
 /**
- * The template used for displaying the page title.
+ * The template used for displaying the page title
  *
  * @package WordPress
  * @subpackage Essence
