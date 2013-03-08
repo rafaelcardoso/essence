@@ -1,3 +1,7 @@
+### 3.0.0
+
+* Introduce grunt implementation
+
 ### 2.0.0
 
 * Major cleanup
