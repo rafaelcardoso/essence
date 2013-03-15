@@ -1,3 +1,9 @@
+### 3.1.0
+
+* Use local version of jQuery instead of CDN
+* Include unminified jQuery and Modernizr
+* Add vendor JS to the build step
+
 ### 3.0.0
 
 * Introduce grunt implementation
