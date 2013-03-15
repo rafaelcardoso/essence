@@ -21,7 +21,6 @@ module.exports = function(grunt) {
           src: [
             'assets/css/editor-style.css',
             'assets/img/{,*/}*.{webp,gif}',
-            'assets/js/vendor/*',
             'lang/*',
             'lib/*',
             'templates/*',
@@ -53,7 +52,11 @@ module.exports = function(grunt) {
       dist: {
         files: {
           '<%= dir.dist %>/assets/js/main.js': [
+            '<%= dir.src %>/assets/js/vendor/jquery-1.9.1.js',
             '<%= dir.src %>/assets/js/*.js'
+          ],
+          '<%= dir.dist %>/assets/js/vendor/modernizr-2.6.2.js': [
+            '<%= dir.src %>/assets/js/vendor/modernizr-2.6.2.js'
           ]
         }
       }
