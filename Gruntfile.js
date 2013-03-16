@@ -48,6 +48,27 @@ module.exports = function(grunt) {
         '<%= dir.src %>/assets/js/*.js'
       ]
     },
+    'string-replace': {
+      dist: {
+        options: {
+          replacements: [
+            {
+              pattern: /(wp_register_script\('jquery',(\s*[^,]+,))\s*[^,]+,\s*([^\)]+)\);/,
+              replacement: ''
+            },
+            {
+              pattern: /(wp_enqueue_script\('jquery')\);/,
+              replacement: ''
+            }
+          ]
+        },
+        files: {
+          '<%= dir.dist %>/lib/theme.php': [
+            '<%= dir.dist %>/lib/theme.php'
+          ]
+        }
+      }
+    },
     uglify: {
       dist: {
         files: {
@@ -68,6 +89,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-string-replace');
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Register tasks
@@ -75,6 +97,7 @@ module.exports = function(grunt) {
     'clean',
     'jshint',
     'copy',
+    'string-replace',
     'cssmin',
     'uglify'
   ]);

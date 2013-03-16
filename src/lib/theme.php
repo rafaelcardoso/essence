@@ -55,10 +55,12 @@ function essence_js() {
   // Register
   wp_register_script('modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.6.2.js', false, null, false);
   wp_deregister_script('jquery');
+  wp_register_script('jquery', get_template_directory_uri() . '/assets/js/vendor/jquery-1.9.1.js', false, null, true);
   wp_register_script('main', get_template_directory_uri() . '/assets/js/main.js', false, null, true);
 
   // Enqueue
   wp_enqueue_script('modernizr');
+  wp_enqueue_script('jquery');
   wp_enqueue_script('main');
   if (is_single() && comments_open() && get_option('thread_comments')) {
     wp_enqueue_script('comment-reply');
