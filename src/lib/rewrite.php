@@ -17,7 +17,7 @@
 /**
  * Define rewrite paths
  */
-function essence_url_define($args) {
+function essence_url_define($content) {
   global $wp_rewrite;
   $rewrites = array(
     'assets/css/(.*)' => THEME_PATH . '/assets/css/$1',
@@ -27,17 +27,17 @@ function essence_url_define($args) {
   );
   $wp_rewrite->non_wp_rules = array_merge($wp_rewrite->non_wp_rules, $rewrites);
 
-  return $args;
+  return $content;
 }
 
 /**
  * Remove full relative path from URLs
  */
-function essence_url_clean($args) {
-  if (strpos($args, FULL_RELATIVE_PLUGIN_PATH) === 0) {
-    return str_replace(FULL_RELATIVE_PLUGIN_PATH, WP_BASE . '/plugins', $args);
+function essence_url_clean($content) {
+  if (strpos($content, FULL_RELATIVE_PLUGIN_PATH) === 0) {
+    return str_replace(FULL_RELATIVE_PLUGIN_PATH, WP_BASE . '/plugins', $content);
   } else {
-    return str_replace('/' . THEME_PATH, '', $args);
+    return str_replace('/' . THEME_PATH, '', $content);
   }
 }
 
@@ -46,7 +46,7 @@ function essence_url_clean($args) {
  */
 if (!is_multisite() && !is_child_theme() && get_option('permalink_structure')) {
   if (!is_admin()) {
-    $args = array(
+    $tags = array(
       'plugins_url',
       'bloginfo',
       'stylesheet_directory_uri',
@@ -55,6 +55,6 @@ if (!is_multisite() && !is_child_theme() && get_option('permalink_structure')) {
       'style_loader_src'
     );
     add_action('generate_rewrite_rules', 'essence_url_define');
-    add_filters($args, 'essence_url_clean');
+    add_filters($tags, 'essence_url_clean');
   }
 }
