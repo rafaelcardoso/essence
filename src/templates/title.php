@@ -8,5 +8,5 @@
 ?>
 
 <header>
-  <h1><?php echo essence_page_title(); ?></h1>
+    <h1><?php echo essence_page_title(); ?></h1>
 </header>

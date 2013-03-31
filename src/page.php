@@ -8,6 +8,6 @@
 ?>
 
 <article>
-  <?php get_template_part('templates/title'); ?>
-  <?php get_template_part('templates/content', 'page'); ?>
+    <?php get_template_part('templates/title'); ?>
+    <?php get_template_part('templates/content', 'page'); ?>
 </article>

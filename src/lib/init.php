@@ -24,23 +24,23 @@ define('THEME_PATH', RELATIVE_CONTENT_PATH . '/themes/' . THEME_NAME);
  * Initialize core theme functions
  */
 function essence_init() {
-  // Add support for translations
-  load_theme_textdomain(THEME_NAME, get_template_directory() . '/lang');
+    // Add support for translations
+    load_theme_textdomain(THEME_NAME, get_template_directory() . '/lang');
 
-  // Add support for thumbnails
-  add_theme_support('post-thumbnails');
+    // Add support for thumbnails
+    add_theme_support('post-thumbnails');
 
-  // Add support for a variety of post formats
-  add_theme_support('post-formats', array(
-    'aside',
-    'link',
-    'gallery',
-    'status',
-    'quote',
-    'image'
-  ));
+    // Add support for a variety of post formats
+    add_theme_support('post-formats', array(
+        'aside',
+        'link',
+        'gallery',
+        'status',
+        'quote',
+        'image'
+    ));
 
-  // Tell the TinyMCE editor to use editor-style.css
-  add_editor_style('assets/css/editor-style.css');
+    // Tell the TinyMCE editor to use editor-style.css
+    add_editor_style('assets/css/editor-style.css');
 }
 add_action('after_setup_theme', 'essence_init');

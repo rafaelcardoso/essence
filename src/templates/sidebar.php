@@ -8,5 +8,5 @@
 ?>
 
 <aside role="complementary">
-  <?php dynamic_sidebar('widget_sidebar'); ?>
+    <?php dynamic_sidebar('widget_sidebar'); ?>
 </aside>
